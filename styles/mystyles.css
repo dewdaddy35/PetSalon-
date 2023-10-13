@@ -1,0 +1,19 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+.header-p{
+    font-size: 30px;
+    font-style: italic;
+}
+.img{
+    align-items: center;
+}
