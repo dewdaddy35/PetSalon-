@@ -17,8 +17,8 @@ function Pet(name,age,gender,breed,service,type){
     this.petAge=age;
     this.petGender=gender;
     this.petBreed=breed;
-    this.petService-service;
-    this.petAge.Type=type;
+    this.petService=service;
+    this.petType=type;
 }
 //global
 let inputName= document.getElementById("txtName");
@@ -29,6 +29,34 @@ let inputService= document.getElementById("txtService");
 let inputType= document.getElementById("txtType");
 
 // create the function
+function isValid(aPet){
+    let validation = true;//assuming everything is valid
+    if(aPet.petName==""){
+        validation= false;
+        inputName.classList.add("error");
+    }
+    if(aPet.petAge==""){
+        validation= false;
+        inputAge.classList.add("error");
+    }
+    if(aPet.petGender==""){
+        validation= false;
+        inputGender.classList.add("error");
+    }
+    if(aPet.petBreed==""){
+        validation= false;
+        inputBreed.classList.add("error");
+    }
+    if(aPet.petService==""){
+        validation= false;
+        inputService.classList.add("error");
+    }
+    if(aPet.petType==""){
+        validation= false;
+        inputType.classList.add("error");
+    }
+    return validation;
+}
 function register(){
 //console.log("Registering");
 //get the values from the form
@@ -43,10 +71,12 @@ let newPet = new Pet(inputName.value,
     inputBreed.value,
     inputService.value,
     inputType.value);
-
-console.log(newPet);
+if (isValid(newPet)==true){
+    
 salon.pets.push(newPet);
+displayCards();
 clearInput();
+}
 }
 
 function clearInput() {
@@ -59,12 +89,13 @@ inputType.value="";
 
 }
 function init(){
-    let pet1 = new Pet("Scooby", 10,"Male", "Pit Bull");
-    let pet2 = new Pet("Scrappy", 8, "Female", "Dobberman");
-    let pet3 = new Pet("Happy", 12, "Male", "French Bulldog");
-    let pet4 = new Pet("Lady", 3, "Female", "Dane");
+    let pet1 = new Pet("Scooby", 10,"Male", "Pit Bull", "Bath","Dog");
+    let pet2 = new Pet("Scrappy", 8, "Female", "Dobberman", "Nail Trim", "Dog");
+    let pet3 = new Pet("Happy", 12, "Male", "Parrot","Vaccine", "Bird" );
+    let pet4 = new Pet("Lady", 3, "Female", "Dane","Cat", "Vaccine and Bath");
     
     salon.pets.push(pet1,pet2,pet3,pet4);
+    displayCards();
    // console.log(salon.pets);
 }
 
