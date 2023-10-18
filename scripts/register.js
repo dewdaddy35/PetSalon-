@@ -75,6 +75,7 @@ if (isValid(newPet)==true){
     
 salon.pets.push(newPet);
 displayCards();
+
 clearInput();
 }
 }
@@ -96,8 +97,30 @@ function init(){
     
     salon.pets.push(pet1,pet2,pet3,pet4);
     displayCards();
-   // console.log(salon.pets);
+// console.log(salon.pets);
 }
+//<script type= "text/javascript">
+ //   document.write("<table border='0' width= '300'>");
+  //      document.write("<tr bgcolor='cyan'>);
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //      document.write("</tr>"");
+  //      document.write("<tr bgcolor='cyan'>);
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+ //           document.write("<td>1</td>");
+  //          document.write("<td>1</td>");
+  //      document.write("</tr>");
+  //      
+   // </table>
+   // </script>
+
 
 window.onload=init;//wait to render the html to execute init
 //displayInfo();

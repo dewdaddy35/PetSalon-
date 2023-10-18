@@ -18,6 +18,7 @@
     align-items: center;
 }
 .error{background-color: red;}
+.real{background-color: green;}
 #pets{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -29,4 +30,11 @@
     background-color: lightgrey;
     padding: 10px;
 
+}
+#tables{
+    display: table;
+   column-count: auto;
+   }
+.table{
+    background-color: lightgrey;
 }
