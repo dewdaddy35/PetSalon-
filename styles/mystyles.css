@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
 }
-
+header h1 {
+    font-family: "AR One Sans";
+    font-size: 75pt;
+}
 .header{
     display: center;
     justify-content: space-around;
@@ -14,6 +17,7 @@
     font-size: 30px;
     font-style: italic;
 }
+
 .img{
     align-items: center;
 }
@@ -32,9 +36,24 @@
 
 }
 #tables{
-    display: table;
-   column-count: auto;
-   }
+    grid-column-start: auto;
+    table-layout: auto;
+    width:100%;
+}
 .table{
+    grid-column-start: auto;
     background-color: lightgrey;
+    border: 60px;
+}
+.th{
+    border-spacing: 10px;
+}
+#total{
+    font-size: 14px;
+    width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: aquamarine;
+padding: 2px;
+color: black;
 }

@@ -10,6 +10,7 @@ let salon = {
     },
     pets:[]
 }
+let counter=0; 
 
 //object constructor
 function Pet(name,age,gender,breed,service,type){
@@ -19,6 +20,7 @@ function Pet(name,age,gender,breed,service,type){
     this.petBreed=breed;
     this.petService=service;
     this.petType=type;
+    this.petID=counter++;
 }
 //global
 let inputName= document.getElementById("txtName");
@@ -31,6 +33,13 @@ let inputType= document.getElementById("txtType");
 // create the function
 function isValid(aPet){
     let validation = true;//assuming everything is valid
+    inputName.classList.remove("error");
+    inputAge.classList.remove("error");
+    inputGender.classList.remove("error");
+    inputBreed.classList.remove("error");
+    inputService.classList.remove("error");
+    inputType.classList.remove("error");
+
     if(aPet.petName==""){
         validation= false;
         inputName.classList.add("error");
@@ -74,8 +83,8 @@ let newPet = new Pet(inputName.value,
 if (isValid(newPet)==true){
     
 salon.pets.push(newPet);
-displayCards();
-
+//displayCards();
+displayTable();
 clearInput();
 }
 }
@@ -89,38 +98,35 @@ inputService.value="";
 inputType.value="";
 
 }
+function deletePet(ID){
+console.log("Deleting pet" + ID);
+let deleteIndex;
+document.getElementById(ID).remove();
+for(let i=0;i<salon.pets.length;i++){
+    let pet=salon.pets[i];
+    if(pet.petID==ID){
+        deleteIndex=i;
+    }
+}
+salon.pets.splice(deleteIndex,1);
+//displayCards();
+displayTable();
+}
 function init(){
     let pet1 = new Pet("Scooby", 10,"Male", "Pit Bull", "Bath","Dog");
     let pet2 = new Pet("Scrappy", 8, "Female", "Dobberman", "Nail Trim", "Dog");
     let pet3 = new Pet("Happy", 12, "Male", "Parrot","Vaccine", "Bird" );
-    let pet4 = new Pet("Lady", 3, "Female", "Dane","Cat", "Vaccine and Bath");
+    let pet4 = new Pet("Lady", 3, "Female", "Dane", "Vaccine and Bath","Cat");
     
     salon.pets.push(pet1,pet2,pet3,pet4);
-    displayCards();
-// console.log(salon.pets);
+    
+    displayTable();
 }
-//<script type= "text/javascript">
- //   document.write("<table border='0' width= '300'>");
-  //      document.write("<tr bgcolor='cyan'>);
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //      document.write("</tr>"");
-  //      document.write("<tr bgcolor='cyan'>);
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
- //           document.write("<td>1</td>");
-  //          document.write("<td>1</td>");
-  //      document.write("</tr>");
-  //      
-   // </table>
-   // </script>
 
+// console.log(salon.pets);
+
+
+//displayCards();
 
 window.onload=init;//wait to render the html to execute init
 //displayInfo();
