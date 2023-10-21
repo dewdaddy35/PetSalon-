@@ -24,8 +24,7 @@
             <a href="contactus.html">Contact</a>
         </nav>
     </header>
-</div>
-        <main class="header-p">
+    <main class="header-p">
         <h2>Register</h2>
     <div class= "container">
         <div class="mb-3">        
@@ -66,29 +65,24 @@
         </div>
         <button class="btn btn-primary" onclick="register()">Registering</button>
     </div>
-    <h2>Pets on the system = <sup id="total"></sup></h2>
-    
-<!-- <div id="pets"></div>-->
-    
-        <table class="table">
-            <thead>>
-                            
-                    <th>#</th>                
-                    <th>Name</th>                    
+    <h2>Pets on the system</h2>
+        <div id="pets">
+           <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
                     <th>Age</th>
                     <th>Gender</th>
                     <th>Breed</th>
                     <th>Pet Service</th>
                     <th>Type</th>
-                
-            </thead>
-        
-                <tbody id="pets"></tbody>
-            
-                </table>
-            
+                  </tr>
+                </thead>
+                <tbody>
+                  </table>
 
-
+        </div>
     </main>    
 
     <script src="./scripts/register.js"></script>

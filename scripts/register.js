@@ -23,12 +23,12 @@ function Pet(name,age,gender,breed,service,type){
     this.petID=counter++;
 }
 //global
-let inputName= document.getElementById("txtName");
-let inputAge= document.getElementById("txtAge");
-let inputGender= document.getElementById("txtGender");
-let inputBreed= document.getElementById("txtBreed");
-let inputService= document.getElementById("txtService");
-let inputType= document.getElementById("txtType");
+let inputName= document.getElementById("#txtName");
+let inputAge= document.getElementById("#txtAge");
+let inputGender= document.getElementById("#txtGender");
+let inputBreed= document.getElementById("#txtBreed");
+let inputService= document.getElementById("#txtService");
+let inputType= document.getElementById("#txtType");
 
 // create the function
 function isValid(aPet){
