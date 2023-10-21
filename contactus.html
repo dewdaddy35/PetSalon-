@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:ital,wght@1,200;1,500&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="header-img"> 
+        <h1>The Fashion Pet</h1> 
+        <p class="par">Open Tuesday-Saturday</p>
+        <p  class="par">9:00am - 8:00pm</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+    <main class="header-p">
+        <h3 class="contact">Contact Information</h3>
+        <p class="contact-p">Fill in the next information</p>
+        
+        <fieldset>
+            <div>
+            <legend> Personal Information</legend>
+                <div class="form-container">
+                <label>Name</label>
+                <input type="text">
+                </div>
+                <div class="form-container">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="form-container">
+                    <label>Phone Number</label>
+                    <input type="text">
+                </div>
+               </fieldset>
+        <fieldset>
+        <div>
+            <legend>Contact Information</legend>
+            <div class="form-container">
+                <label>Type</label>
+                <select class="select-options">
+                    <option>--Select an option--</option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Bird</option>
+                    <option>Other</option>
+                    </select>
+            </div>
+            <div class="form-container">
+                <label>Service</label>
+                <select class="select-options">
+                    <option>--Select an option--</option>
+                    <option>Shampoo</option>
+                    <option>Haircut</option>
+                    <option>Nail Trimming</option>
+                    <option>Vaccine</option>
+                    </select>
+            </div>
+    
+        </div>
+            </fieldset>
+        <fieldset>
+        <div>
+            <legend>Which would you like us to conctact you</legend>
+            <div class="flex-radio">
+                <div>
+                <input type="radio" value="phone">
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="radio" value="email">
+                <label>Phone</label>
+            </div>
+            </div>
+                <p>prefered appointment Date and Time</p>
+                <p>We will contact you and try to meet your need.</p>
+            <div class="form-container">
+                <label>Date:</label>
+                <input type="date" value="dd-mm-yyyy" min="2023-09-01" max="2099-12-31">
+            </div>
+            <div>
+                <div class="form-container">
+                    <label>Time:</label>
+                    <input type="time" name="Date" min="08:00am" max="6:30pm">
+                </div>
+            </div>
+        </div>
+        </fieldset>
+        
+        <button class="btn btn-primary" onclick="register()">Send</button>
+    </div>
+    
+    </main>
+    <script src="./scripts/contactus.js"></script>
+    <script src="./scripts/displayc.js"></script>
+    
+</body>
+<footer class="header-p">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+</footer>
+</html>

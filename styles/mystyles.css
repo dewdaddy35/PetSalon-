@@ -3,23 +3,40 @@
     margin: 0;
     padding: 0;
 }
-
-.header{
-    display: center;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: center;
+header h1 {
+    font-family: "AR One Sans";
+    font-size: 75pt;
 }
 .header-p{
-    font-size: 30px;
-    font-style: italic;
+    display: center;
+   background-color: aqua;
+    text-align: center;
+    font-size: larger;
+    
 }
+.header-img{
+    background-image: url(./img/salon.jfif);
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    text-align: center;
+}
+
 .img{
     align-items: center;
 }
 .error{background-color: red;}
 .real{background-color: green;}
-#pets{
+.img-shrink{
+    width: 150px;
+    height: auto;
+}
+.par{
+    font-size: xx-large;
+    color: red;
+
+}
+/*#pets{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 10px;
@@ -32,9 +49,24 @@
 
 }
 #tables{
-    display: table;
-   column-count: auto;
-   }
+    grid-column-start: auto;
+    table-layout: auto;
+    width:100%;
+}
 .table{
+    grid-column-start: auto;
     background-color: lightgrey;
+    border: 60px;
+}
+.th{
+    border-spacing: 10px;
+}
+#total{
+    font-size: 14px;
+    width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: aquamarine;
+padding: 2px;
+color: black;
 }
