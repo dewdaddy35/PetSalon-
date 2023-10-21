@@ -20,12 +20,12 @@
 DIV.innerHTML= card;
 //}
 function displayTable(){
-    const tBody = document.getElementById("pets");
+    const TBody = document.getElementById("pets");
     let tr ="";
     for(let i=0;i<salon.pets.length;i++){
         let pet=salon.pets[i];
 
-tr +=`
+tr+=`
 <tr id= ${pet.petID}>
 <td>${pet.petID}</td>  
 <td>${pet.petName}</td>
@@ -38,7 +38,7 @@ tr +=`
 </tr>
 `;
 }
-tBody.innerHTML = tr;
+TBody.innerHTML = tr;
 getTotal();
 }
 displayTable();
@@ -77,10 +77,10 @@ TOTAL.innerHTML=salon.pets.length;
 
 // }
 // //#endregion
-function getTotal(){
-    const TOTAL= document.getElementById("total");
-    TOTAL.innerHTML=salon.pets.length;
-}
+//function getTotal(){
+//    const TOTAL= document.getElementById("total");
+//    TOTAL.innerHTML=salon.pets.length;
+//}
 
 
 

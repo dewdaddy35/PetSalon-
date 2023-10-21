@@ -34,7 +34,7 @@
 
 }
 /*#pets{
-    display: grid;
+   
     grid-template-columns: repeat(3,1fr);
     column-gap: 10px;
 }
@@ -54,7 +54,7 @@
     grid-column-start: auto;
     background-color: lightgrey;
     border: 60px;
-}
+}*/
 .th{
     border-spacing: 10px;
 }
@@ -63,7 +63,7 @@
     width: 18px;
 height: 18px;
 border-radius: 50%;
-background-color: aquamarine;
+background-color: rgba(242, 255, 127, 0.247);
 padding: 2px;
 color: black;
 }

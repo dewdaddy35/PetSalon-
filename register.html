@@ -65,11 +65,11 @@
         </div>
         <button class="btn btn-primary" onclick="register()">Registering</button>
     </div>
-    <h2>Pets on the system</h2>
-        <div id="pets">
+    <h2>Pets on the system <sup id="total">total</sup></h2>
+       <!-- <div id="pets">-->
            <table class="table">
                 <thead>
-                  <tr>
+                  
                     <th>#</th>
                     <th>Name</th>
                     <th>Age</th>
@@ -77,9 +77,11 @@
                     <th>Breed</th>
                     <th>Pet Service</th>
                     <th>Type</th>
-                  </tr>
+                    <th></th>
                 </thead>
-                <tbody>
+                <tbody id="pets">
+                   
+                    </tbody>
                   </table>
 
         </div>
@@ -88,7 +90,7 @@
     <script src="./scripts/register.js"></script>
     <script src="./scripts/display.js"></script>
 </body>
-<footer class="header-p">
+<!--footer class="header-p">
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
