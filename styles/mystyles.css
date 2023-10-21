@@ -18,7 +18,10 @@
     height: 350px;
     text-align: center;
 }
+.font{ 
+    font-family: 'Times New Roman', Times, serif;
 
+}
 .img{
     align-items: center;
 }
@@ -29,8 +32,9 @@
     height: auto;
 }
 .par{
-    font-size: xx-large;
-    color: red;
+    font-size: large;
+    color: rgb(0, 89, 255);
+    font-style: italic;
 
 }
 /*#pets{
